@@ -1,0 +1,44 @@
+@media (max-width: 1350px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header__wrapper {
+    padding-top: 10px;
+  }
+
+  .info-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-menu {
+    z-index: 10;
+
+    order: 2;
+    width: 100%;
+
+    // transform: translateX(-40px);
+    // transform: translateY(-40px);
+    // transform: translateY(-500px);
+
+    transition: all 0.5s;
+  }
+
+  .main-menu__list {
+    display: block;
+    width: 250px;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  .main-menu__item {
+    padding: 10px 0;
+  }
+}

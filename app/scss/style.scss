@@ -3,3 +3,124 @@
 @import 'mixins.scss';
 @import 'general.scss';
 
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  & path,
+  & line
+   {
+    transition: stroke 0.5s ease;
+  }
+
+  &:hover path,
+  &:hover line,
+  &:focus path,
+  &:focus line {
+    stroke: $second-color;
+  }
+}
+
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $main-color;
+  }
+}
+
+.header__logo-img {
+  width: 40px;
+}
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+  gap: 80px;
+
+  list-style: none
+}
+
+.main-menu__link {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: $main-color;
+
+  border-bottom: 1px solid transparent;
+
+  transition: 0.5s all;
+
+  &:hover,
+  &:focus {
+    color: $second-color;
+    border-bottom: 1px solid $second-color;
+  }
+}
+
+.main-menu__link--current {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: $second-color;
+
+  border-bottom: 1px solid $second-color;
+
+  cursor: default;
+}
+
+.hamburger {
+  display: none;
+
+  &--close {
+    & span {
+      background-color: $second-color;
+      transition: 0.5s transform ease;
+    }
+
+    & span:nth-child(2) {
+      transform: translateY(-2px) translateX(-2px) rotate(45deg);
+      transform-origin: left top;
+    }
+
+    & span:nth-child(3) {
+      visibility: hidden;
+    }
+
+    & span:nth-child(4) {
+      transform: translateX(-13px) translateY(-19px) rotate(-45deg);
+      transform-origin: right bottom;
+    }
+  }
+}
+
+.hamburger__item {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin: 6px 0;
+
+  background-color: $main-color;
+}
+
+
+@import 'media.scss';
+
+
