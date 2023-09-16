@@ -61,7 +61,21 @@
     padding: 10px 0;
   }
 
+  .description {
+    padding-bottom: 30px;
+    padding-top: 160px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      margin-right: -30px;
+      top: 60px;
+
+      width: 60px;
+      height: 48px;
+    }
+  }
 
   .footer__wrapper {
     grid-template-columns: 300px 200px;
@@ -83,5 +97,26 @@
 
   .footer__social {
     justify-self: start;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .description {
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      margin-right: -25px;
+      top: 80px;
+
+      width: 50px;
+      height: 40px;
+    }
+  }
+
+  .description__text {
+    font-size: 22px;
   }
 }

@@ -160,6 +160,43 @@
   background-color: $main-color;
 }
 
+.description {
+  position: relative;
+  max-width: 856px;
+  margin: 0 auto;
+  padding-top: 244px;
+  padding-bottom: 95px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    margin-right: -40px;
+    top: 120px;
+
+    width: 80px;
+    height: 64px;
+
+    background-image: url(../images/icons/quotes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.description__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .footer {
   flex: 0 0 auto;
