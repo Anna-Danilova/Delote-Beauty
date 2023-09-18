@@ -265,6 +265,31 @@
   text-align: left;
 }
 
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 148px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 78px;
+
+  list-style: none;
+}
+
+.partners__link {
+  cursor: pointer;
+
+  & path {
+    transition: fill 0.5s ease;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $second-color;
+  }
+}
+
 .footer__wrapper {
   display: grid;
   grid-template-columns: 60px 300px 180px 170px;
@@ -274,8 +299,6 @@
   border-top: 1px solid $main-color;
   border-bottom: 1px solid $main-color;
 }
-
-
 
 .footer__social {
   justify-self: end;

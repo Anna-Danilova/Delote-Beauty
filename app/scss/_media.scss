@@ -105,6 +105,13 @@
     font-size: 22px;
   }
 
+  .partners__list {
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
   .footer__wrapper {
     grid-template-columns: 300px 200px;
     grid-template-rows: 100px 170px;
@@ -152,6 +159,13 @@
     grid-template-columns: repeat(2, minmax(200px, 396px));
     grid-template-rows: repeat(3, auto);
     justify-content: space-between;
+  }
+
+  .partners__list {
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
   }
 }
 
