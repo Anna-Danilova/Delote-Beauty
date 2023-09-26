@@ -6,6 +6,16 @@
   .service__description {
     font-size: 25px;
   }
+
+  .map-description__wrapper {
+    grid-template-columns: 315px 180px;
+    justify-content: center;
+    column-gap: 15%;
+    row-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -183,5 +193,9 @@
   .works__list {
     padding-top: 30px;
     padding-bottom: 50px;
+  }
+
+  .map-description__wrapper {
+    column-gap: 10%;
   }
 }
