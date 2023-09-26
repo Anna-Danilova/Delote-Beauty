@@ -137,6 +137,13 @@
 
 
 @media (max-width: 768px) {
+  .title--medium {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-size: 30px;
+  }
+
   .description {
 
     &::before {
@@ -167,5 +174,14 @@
     padding-left: 30px;
     padding-bottom: 50px;
   }
-}
 
+  .works__menu-list {
+    max-width: 500px;
+    font-size: 20px;
+  }
+
+  .works__list {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
