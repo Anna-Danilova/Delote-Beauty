@@ -51,6 +51,20 @@
   text-align: center;
 }
 
+.title--xs {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.title--subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
 .promo {
   height: 1038px;
 
@@ -365,6 +379,47 @@
 
   padding-top: 80px;
   padding-bottom: 100px;
+}
+
+.masters__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 400px));
+  column-gap: 40px;
+  row-gap: 60px;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 16px;
+  padding-bottom: 100px;
+  list-style: none;
+}
+
+.master__photo-wrapper {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -16px;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background-color: transparent;
+    border: 1px solid $second-color;
+  }
+}
+
+.master__photo {
+  width: 100%;
+  height: auto;
+}
+
+.master__name {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .footer__wrapper {

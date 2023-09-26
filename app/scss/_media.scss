@@ -122,6 +122,18 @@
     padding-bottom: 50px;
   }
 
+  .masters__list {
+    padding-right: 13px;
+  }
+
+  .master__photo-wrapper {
+
+    &::before {
+      top: -15px;
+      right: -13px;
+    }
+  }
+
   .footer__wrapper {
     grid-template-columns: 300px 200px;
     grid-template-rows: 100px 170px;
@@ -197,5 +209,31 @@
 
   .map-description__wrapper {
     column-gap: 10%;
+  }
+
+  .masters__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    list-style: none;
+  }
+
+  .master__photo-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      top: -13px;
+      right: -10px;
+    }
+  }
+
+  .master__name {
+    padding-top: 10px;
   }
 }
