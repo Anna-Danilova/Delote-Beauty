@@ -1,0 +1,19 @@
+@keyframes open-info {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes close-info {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}

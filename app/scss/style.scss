@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'general.scss';
+@import 'animation.scss';
 
 .button {
   background: transparent;
@@ -485,9 +486,17 @@
   background-color: #111111;
   border-left: 1px solid $main-color;
 
+  animation-name: open-info;
+  animation-duration: 0.5s;
+
+  transition: 0.5s all;
+
   &.info--close {
     display: none;
-    right: -100%;
+
+    animation-name: close-info;
+    animation-duration: 0.5s;
+    transition: 0.5s all;
   }
 }
 
