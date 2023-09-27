@@ -1,0 +1,262 @@
+@media (max-width: 1350px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .service__description {
+    font-size: 25px;
+  }
+
+  .map-description__wrapper {
+    grid-template-columns: 315px 180px;
+    justify-content: center;
+    column-gap: 15%;
+    row-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .promo {
+    height: 500px;
+
+    background: url(../images/bgc-mob.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .promo__title {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    font-size: 40px;
+    line-height: 86px;
+  }
+
+  .header__wrapper {
+    padding-top: 10px;
+  }
+
+  .info-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-menu {
+    display: none;
+    z-index: 10;
+
+    order: 2;
+    width: 100%;
+
+    // transform: translateX(-40px);
+    // transform: translateY(-40px);
+    // transform: translateY(-500px);
+
+    transition: all 0.5s;
+  }
+
+  .main-menu__list {
+    display: block;
+    width: 250px;
+    text-align: center;
+    background-color: #000000;
+  }
+
+  .main-menu__item {
+    padding: 10px 0;
+  }
+
+  .description {
+    padding-bottom: 70px;
+    padding-top: 160px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      margin-right: -30px;
+      top: 60px;
+
+      width: 60px;
+      height: 48px;
+    }
+  }
+
+  .services__list {
+    column-gap: 40px;
+    row-gap: 35px;
+    padding-right: 15px;
+
+    list-style: none;
+  }
+
+  .service__img-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      top: -15px;
+      left: 15px;
+    }
+  }
+
+  .service__description {
+    margin: 20px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+  }
+
+  .partners__list {
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  .masters__list {
+    padding-right: 13px;
+  }
+
+  .master__photo-wrapper {
+
+    &::before {
+      top: -15px;
+      right: -13px;
+    }
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 100px 170px;
+    justify-content: center;
+    column-gap: 10%;
+    row-gap: 5%;
+
+    padding: 30px 0;
+  }
+
+  .footer__contacts {
+    order: 1;
+  }
+
+  .footer__working-mode {
+    order: 1;
+  }
+
+  .footer__social {
+    justify-self: start;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title--medium {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-size: 30px;
+  }
+
+  .description {
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      margin-right: -25px;
+      top: 80px;
+
+      width: 50px;
+      height: 40px;
+    }
+  }
+
+  .description__text {
+    font-size: 22px;
+  }
+
+  .services__list {
+    grid-template-columns: repeat(2, minmax(200px, 396px));
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-between;
+  }
+
+  .partners__list {
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
+
+  .works__menu-list {
+    max-width: 500px;
+    font-size: 20px;
+  }
+
+  .works__list {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .map-description__wrapper {
+    column-gap: 10%;
+  }
+
+  .masters__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    list-style: none;
+  }
+
+  .master__photo-wrapper {
+    position: relative;
+
+    &::before {
+      content: '';
+      top: -13px;
+      right: -10px;
+    }
+  }
+
+  .master__name {
+    padding-top: 10px;
+  }
+
+  .price__list {
+    padding-bottom: 50px;
+  }
+
+  .prise-card {
+    flex-direction: column;
+  }
+
+  .price-card__image {
+    width: 80%;
+    order: -1;
+    margin-bottom: 25px;
+  }
+
+  .price-card__table {
+    width: 80%;
+  }
+
+  .prise-card__service {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
