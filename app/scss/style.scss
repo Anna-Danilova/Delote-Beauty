@@ -106,6 +106,7 @@
   width: 40px;
 }
 
+
 .main-menu__list {
   display: flex;
   justify-content: space-around;
@@ -154,7 +155,6 @@
 
   &--close {
     & span {
-      background-color: $second-color;
       transition: 0.5s transform ease;
     }
 
