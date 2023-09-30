@@ -29,3 +29,22 @@ window.addEventListener('click', e => {
     })
   }
 });
+
+const worksTabs = document.querySelectorAll('.works__tab');
+const worksLists = document.querySelectorAll('.works__list');
+
+for (let i = 0; i < worksTabs.length; i++) {
+  worksTabs[i].addEventListener('click', function (event) {
+    for (let t = 0; t < worksTabs.length; t++) {
+      worksTabs[t].classList.remove('works__tab--active');
+    };
+    event.target.classList.add('works__tab--active');
+  })
+  worksTabs[i].addEventListener('click', function () {
+    for (let c = 0; c < worksTabs.length; c++) {
+      worksLists[c].classList.remove('works__list--active');
+    };
+    worksLists[i].classList.add('works__list--active');
+  })
+};
+
