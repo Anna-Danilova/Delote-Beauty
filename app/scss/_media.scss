@@ -39,7 +39,18 @@
   }
 
   .header__wrapper {
-    padding-top: 10px;
+    height: 70px;
+    padding-top: 15px;
+    border: none;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 15px;
+      background-color: $main-color;
+    }
   }
 
   .info-button {
@@ -51,22 +62,27 @@
   }
 
   .main-menu {
-    display: none;
     z-index: 10;
 
     order: 2;
     width: 100%;
 
-    // transform: translateX(-40px);
-    // transform: translateY(-40px);
-    // transform: translateY(-500px);
+    right: 0;
+
+    transform: translateY(-500px);
 
     transition: all 0.5s;
+  }
+
+  .main-menu--open {
+    transform: translateY(0);
   }
 
   .main-menu__list {
     display: block;
     width: 250px;
+    margin-left: auto;
+
     text-align: center;
     background-color: #000000;
   }
