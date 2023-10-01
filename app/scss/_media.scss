@@ -201,7 +201,7 @@
   }
 
   .services__list {
-    grid-template-columns: repeat(2, minmax(200px, 396px));
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(3, auto);
     justify-content: space-between;
   }
@@ -229,7 +229,7 @@
 
   .masters__list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 400px));
+    grid-template-columns: repeat(2, 45%);
     justify-content: center;
     column-gap: 50px;
     row-gap: 30px;
@@ -274,5 +274,61 @@
   .prise-card__service {
     padding-top: 25px;
     padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title--medium {
+    font-size: 25px;
+    padding: 25px 0;
+  }
+
+  .title--small {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  .title--xs {
+    font-size: 20px;
+  }
+
+  .partners__list {
+    padding: 40px 20px;
+  }
+
+  .partners__link svg {
+    max-width: 70px;
+  }
+
+  .works__tab {
+    font-size: 16px;
+  }
+
+  .works__list {
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+  }
+
+  .masters__list {
+    row-gap: 40px;
+  }
+
+  .map-description__wrapper {
+    grid-template-columns: 200px 180px;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: 200px 200px;
+    gap: 5%;
+    justify-content: center;
+  }
+
+  .contacts__wrapper,
+  .working-mode__wrapper {
+    gap: 5px;
+  }
+
+  .footer {
+    margin-top: 40px;
   }
 }
