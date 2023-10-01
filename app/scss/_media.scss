@@ -297,7 +297,7 @@
   }
 
   .partners__link svg {
-    max-width: 70px;
+    max-width: 60px;
   }
 
   .works__tab {
@@ -307,6 +307,12 @@
   .works__list {
     grid-template-columns: repeat(2, 40%);
     justify-content: center;
+  }
+
+  .works__menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
   }
 
   .masters__list {
